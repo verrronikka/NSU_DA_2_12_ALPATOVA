@@ -1,5 +1,5 @@
 # About
-Код задачи moving_statics выполняет следующее:
+Код задачи moving_statistics выполняет следующее:
   - Создание или чтение временного ряда из файла
   - Вычисление скользящих статистик для указанных окон
   - Построение и сохранение графиков статистик
@@ -20,7 +20,7 @@
   pip install pandas matplotlib
   
 ## Запуск
-  python moving_statics.py test.csv -o output --mov-avg "mov_avg" --mov-max "mov_max" --mov-min "mov_min" --mov-std "mov_std" --windows 3 5 7 --format pdf
+  python moving_statistics.py test.csv -o output --mov-avg "mov_avg" --mov-max "mov_max" --mov-min "mov_min" --mov-std "mov_std" --windows 3 5 7 --format pdf
   
 ## Вывод программы
   Будет выводить набор графиков от статистик, которые мы указали
