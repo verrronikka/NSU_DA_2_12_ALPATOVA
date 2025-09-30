@@ -23,7 +23,8 @@
   python moving_statics.py test.csv -o output --mov-avg "mov_avg" --mov-max "mov_max" --mov-min "mov_min" --mov-std "mov_std" --windows 3 5 7 --format pdf
   
 ## Вывод программы
-  Будет выводить набор графиков, которые мы указали:
+  Будет выводить набор графиков, которые мы указали
+  
   Примеры графиков:
 <img width="2422" height="1373" alt="image" src="https://github.com/user-attachments/assets/c4b1f3bc-f500-45ba-8ec3-f8b380f4f632" />
 <img width="2270" height="1326" alt="image" src="https://github.com/user-attachments/assets/49d648ad-7517-41f2-995d-9e09f6aa5ada" />
