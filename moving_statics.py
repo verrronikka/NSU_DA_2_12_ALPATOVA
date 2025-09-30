@@ -6,7 +6,7 @@ from pathlib import Path
 
 def create_time_series(file_path, date_col, value_col):
     """
-    Читает временной ряд из файла csv
+    Читает временной ряд из файла csv, xlsx, xls, txt
     
     Args:
         file_path (str): путь к файлу с данными
@@ -28,6 +28,10 @@ def create_time_series(file_path, date_col, value_col):
     try: 
         if file_ext == '.csv':
             df = pd.read_csv(file_path, parse_dates=[date_col])
+        elif file_ext in ['.xlsx', '.xls']:
+            df = pd.read_excel(file_path, parse_dates=[date_col])
+        elif file_ext == '.txt':
+            df = pd.read_csv(file_path, sep=None, engine='python', parse_dates=[date_col])
         else:
             raise ValueError(f"Неподдерживаемый формат файла: {file_ext}")
         
